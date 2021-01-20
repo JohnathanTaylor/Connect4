@@ -1,0 +1,28 @@
+	@Test
+	void test1() {
+		String[] moves = {"?","A","A","A","?","A","?"
+				         ,"?","?","?","?","?","?","?"
+				         ,"?","?","?","?","?","?","?"
+				         ,"?","A","?","?","?","?","?"
+				         ,"?","A","?","?","?","?","?"
+				         ,"?","A","?","?","?","?","?"};
+		
+		int validPosition = Connect4Service.getValidCellMoves(moves, 0);
+		assertTrue(validPosition == 35, "validPosition: " + validPosition);
+
+	}
+	
+	
+	@Test
+	void test2() {
+		String[] moves = {"?","?","?","?","?","?","?"
+				         ,"?","?","?","?","?","?","?"
+				         ,"X","?","?","?","?","?","?"
+				         ,"X","?","?","?","?","?","?"
+				         ,"X","?","?","?","?","?","?"
+				         ,"X","?","?","?","?","?","?"};
+		
+		int validPosition = Connect4Service.getValidCellMoves(moves, 0);
+		assertTrue(validPosition == 7, "validPosition: " + validPosition);
+   }
+	

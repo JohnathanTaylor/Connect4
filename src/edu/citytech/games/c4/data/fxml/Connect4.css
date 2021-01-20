@@ -1,0 +1,46 @@
+.title-label, .custom-label {
+    -fx-font-size: 35px;
+    -fx-text-fill: red;
+    -fx-alignment: center;
+    
+
+}
+
+.custom-label, .winner{
+    
+    -fx-min-width: 80px;
+    -fx-min-height: 80px;
+    -fx-border-color: white;
+    
+    
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+}
+.X {
+	-fx-background-color: yellow;
+	-fx-text-fill: black;
+}
+
+.O {
+	-fx-background-color: red;
+	-fx-text-fill: black;
+}
+
+#apLayout {
+    -fx-background-color: #1d1d1d;
+}
+
+.winner {
+	-fx-text-fill: red;
+
+}
+
+.possibleMove {
+	-fx-text-fill: Blue;
+}
+
+#gplayout {
+	fx-height: 1000px;
+	fx-hgap: 6px;
+	fx-vgap: 6px;
+}
